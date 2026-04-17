@@ -11,3 +11,11 @@
     @apply bg-navy-900/15 text-navy-950;
   }
 }
+
+/* Mobile nav: native <details> icon swap (Tailwind group-open can miss on some builds) */
+.mobile-nav-details[open] .mobile-nav-icon-menu {
+  display: none;
+}
+.mobile-nav-details:not([open]) .mobile-nav-icon-close {
+  display: none;
+}
